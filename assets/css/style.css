@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+
+}
+
+li {
+    list-style: none;
+}
+
+/* Global style */
+
+body {
+    background: var(--bgc, #162831);
+    width: 1297px;
+    margin: auto;
+
+}
+
+a,
+button {
+    color: white;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.navigations ul {
+
+    display: flex;
+    gap: 50px;
+}
+
+.navigations a:hover {
+    border-bottom: 1px solid white;
+}
+
+.btn {
+    background: #018ABE;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #02648b;
+}
+
+/* Slider block */
+
+.slider {
+    height: 100%;
+    display: block;
+    margin: 20px 0 50px;
+    height: 600px;
+}
+
+.slider img {
+    position: absolute;
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+
+.content h1 {
+    font-size: 64px;
+    width: 600px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 24px;
+}
+
+/* Sessions block */
+
+.sessions-block {
+    margin: 50px auto;
+}
+
+.sessions-block h2 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cards {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 416px 416px 416px;
+    grid-template-rows: repeat(2, 258px);
+    gap: 24px;
+
+}
+
+.item {
+    border-radius: 20px;
+    background: url('/assets/img/bg-card.png') no-repeat;
+    background-size: contain;
+    background-color: #00455f;
+    background-position: 50%;
+    display: flex;
+    align-items: end; 
+    justify-content: center;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.item:first-child {
+    grid-area: 1 / 1 / 3 / 2;
+    padding-bottom: 60px;
+
+}
+
+/* .item:hover {
+    border-bottom: 7px solid #018ABE;
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+/* Reviews block */
+
+.content-reviews  {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    
+}
+.content-reviews ul {
+    display: flex;
+    justify-content: center;
+    
+}
+li .post {
+    width: 500px;
+    background-color: #018ABE;
+}
+
+.post h3{
+
+}
+.post p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+/* About block */
+
+/* Price block */
+
+/* Contact block */
