@@ -32,6 +32,30 @@ main {
     flex-direction: column;
 }
 
+h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    align-items: center;
+
+
+}
+
+h2::before {
+    content: url('../img/img-1.svg');
+    position: relative;
+    top: -8px;
+}
+
+h2::after {
+    content: url('../img/img-2.svg');
+    position: relative;
+    top: -8px;
+}
+
 /* Header */
 
 .header {
@@ -103,10 +127,6 @@ main {
     margin: 50px auto;
 }
 
-.sessions-block h2 {
-    text-align: center;
-    margin: 50px 0;
-}
 
 .cards {
     padding: 50px 0;
@@ -114,7 +134,6 @@ main {
     grid-template-columns: 416px 416px 416px;
     grid-template-rows: repeat(2, 258px);
     gap: 24px;
-
 }
 
 .item {
@@ -124,58 +143,103 @@ main {
     background-color: #00455f;
     background-position: 50%;
     display: flex;
-    align-items: end; 
+    align-items: end;
     justify-content: center;
     padding-bottom: 30px;
     border-radius: 10px;
     position: relative;
-
+    border-bottom: 7px solid transparent;
 }
 
 .item:first-child {
     grid-area: 1 / 1 / 3 / 2;
     padding-bottom: 60px;
-
 }
 
-/* .item:hover {
+.item:hover {
     border-bottom: 7px solid #018ABE;
     cursor: pointer;
-} */
-
-
-
-
-
-
+    border-radius: 10px;
+}
 
 
 /* Reviews block */
 
-.content-reviews  {
-    position: absolute;
+.reviews-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-reviews {
+    position: relative;
     left: 0;
     width: 100%;
-    
+
 }
+
 .content-reviews ul {
     display: flex;
     justify-content: center;
-    
+    gap: 50px;
+    align-items: center;
+
 }
+
 li .post {
     width: 500px;
-    background-color: #018ABE;
+    background-color: rgba(1, 138, 190, .3);
+    height: 276px;
+    padding: 40px 45px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.post h3{
+.post h3 {}
 
-}
-.post p{
+.post p {
     font-size: 14px;
     font-weight: 300;
     line-height: 140%;
 }
+
+li .post-active {
+    width: 636px;
+    background-color: #018ABE;
+    height: 350px;
+    padding: 55px 60px;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+li .post-active p {
+    margin: 20px 0;
+}
+
+.post>p {
+    color: rgba(255, 255, 255, 0.3);
+    margin: 15px 0;
+}
+
+.post>h3 {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.post-active h3 {
+    color: white;
+    font-size: 22px;
+}
+
+.post-active>p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
 
 /* About block */
 
