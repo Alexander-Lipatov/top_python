@@ -138,7 +138,7 @@ h2::after {
 
 .item {
     border-radius: 20px;
-    background: url('/assets/img/bg-card.png') no-repeat;
+    background: url('../img/bg-card.png') no-repeat;
     background-size: contain;
     background-color: #00455f;
     background-position: 50%;
