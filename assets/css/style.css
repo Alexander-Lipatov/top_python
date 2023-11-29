@@ -145,8 +145,8 @@ button:hover {
     padding-bottom: 30px;
     border-radius: 10px;
     position: relative;
-    border-bottom: 7px solid transparent;
-    transition: all ease .35s;
+    border-bottom: 7px solid transparent            ;
+    transition: border-bottom ease .35s;
 
 }
 
