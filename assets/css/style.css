@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     color: white;
 
 
@@ -54,6 +54,10 @@ h2::after {
     content: url('../img/img-2.svg');
     position: relative;
     top: -8px;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 /* Header */
@@ -239,10 +243,192 @@ li .post-active p {
     font-weight: 300;
 }
 
+.controls {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px
+}
+
+.controls li {
+    width: 16px;
+    height: 16px;
+    background-color: #737e83;
+    border-radius: 5px;
+}
+
+.controls li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.controls li.active {
+    background: white;
+}
+
 
 
 /* About block */
 
+.about-block {
+    margin: 100px 0;
+}
+
+.block-row {
+    display: flex;
+    margin: 100px 100px 0 100px;
+    gap: 84px;
+
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.block p {
+    margin: 30px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+
+
 /* Price block */
 
+.price-block {
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+
+}
+
+.price-list {
+    display: flex;
+    align-items: center;
+    justify-self: stretch;
+
+
+}
+
+.price-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 31px;
+    width: 415px;
+
+}
+
+.price-list>ul>li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-list>ul>li div:first-child:before {
+    content: url('../img/img-1.svg');
+    margin-right: 20px;
+
+}
+
+.cert-block-img {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.cert-block-img img {
+    border-radius: 12px;
+}
+
 /* Contact block */
+.contact-block {
+    display: flex;
+    gap: 48px;
+    margin: 100px 0 60px;
+}
+
+.contact-map {
+    width: 856px;
+}
+
+.contact-map iframe {
+    border-radius: 10px;
+
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+    gap: 24px;
+
+}
+
+.contact-card-info {
+    border-radius: 10px;
+    padding: 35px 45px;
+    height: 220px;
+    background-color: #018ABE;
+}
+
+.contact-card-info h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.contact-card-info p {
+    margin: 21px 0;
+}
+
+.contact-card-info p.addr::before {
+    content: url('../img/location.svg');
+    margin-right: 20px;
+}
+
+.contact-card-info p.metro::before {
+    content: url('../img/metro.svg');
+    margin-right: 20px;
+}
+
+.contact-card-info p.date-meeting::before {
+    content: url('../img/calendar.svg');
+    margin-right: 20px;
+}
+
+.contact-card-info button {
+    color: #018ABE;
+    padding: 9px 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
