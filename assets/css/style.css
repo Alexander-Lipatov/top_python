@@ -146,6 +146,8 @@ button:hover {
     border-radius: 10px;
     position: relative;
     border-bottom: 7px solid transparent;
+    transition: all ease .35s;
+
 }
 
 .item:first-child {
@@ -158,6 +160,8 @@ button:hover {
     cursor: pointer;
     border-radius: 10px;
 }
+
+.item:out
 
 
 /* Reviews block */
