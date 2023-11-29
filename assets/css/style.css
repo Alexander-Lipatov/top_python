@@ -4,8 +4,6 @@
     text-decoration: none;
     font-family: sans-serif;
     color: white;
-
-
 }
 
 li {
@@ -18,13 +16,11 @@ body {
     background: var(--bgc, #162831);
     width: 1297px;
     margin: auto;
-
 }
 
 a,
 button {
     color: white;
-
 }
 
 main {
@@ -40,8 +36,6 @@ h2 {
     justify-content: center;
     gap: 45px;
     align-items: center;
-
-
 }
 
 h2::before {
@@ -56,7 +50,7 @@ h2::after {
     top: -8px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
@@ -131,7 +125,6 @@ button:hover{
     margin: 50px auto;
 }
 
-
 .cards {
     padding: 50px 0;
     display: grid;
@@ -178,7 +171,6 @@ button:hover{
     position: relative;
     left: 0;
     width: 100%;
-
 }
 
 .content-reviews ul {
@@ -186,7 +178,6 @@ button:hover{
     justify-content: center;
     gap: 50px;
     align-items: center;
-
 }
 
 li .post {
@@ -198,10 +189,7 @@ li .post {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
-
-.post h3 {}
 
 .post p {
     font-size: 14px;
@@ -267,8 +255,6 @@ li .post-active p {
     background: white;
 }
 
-
-
 /* About block */
 
 .about-block {
@@ -303,8 +289,6 @@ li .post-active p {
     line-height: 140%;
 }
 
-
-
 /* Price block */
 
 .price-block {
@@ -317,16 +301,12 @@ li .post-active p {
     display: flex;
     justify-content: space-between;
     margin: 50px;
-
-
 }
 
 .price-list {
     display: flex;
     align-items: center;
     justify-self: stretch;
-
-
 }
 
 .price-list ul {
@@ -335,7 +315,6 @@ li .post-active p {
     justify-content: center;
     gap: 31px;
     width: 415px;
-
 }
 
 .price-list>ul>li {
@@ -346,7 +325,6 @@ li .post-active p {
 .price-list>ul>li div:first-child:before {
     content: url('../img/img-1.svg');
     margin-right: 20px;
-
 }
 
 .cert-block-img {
@@ -373,7 +351,6 @@ li .post-active p {
 
 .contact-map iframe {
     border-radius: 10px;
-
 }
 
 .contact-cards {
@@ -381,7 +358,6 @@ li .post-active p {
     flex-direction: column;
     width: 392px;
     gap: 24px;
-
 }
 
 .contact-card-info {
