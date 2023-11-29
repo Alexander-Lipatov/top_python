@@ -411,6 +411,9 @@ footer {
 
 
 
+/* Session block on flex */
+
+
 .flex-col {
     flex-direction: column;
 }
