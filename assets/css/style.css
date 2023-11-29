@@ -408,3 +408,35 @@ footer {
     justify-content: space-between;
     margin: 30px 0px;
 }
+
+
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-box{
+    display: flex;
+    gap: 24px;}
+
+.block-cont {
+    height: 258px;
+    width: 416px;
+    background: url('../img/bg-card.png') no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    background-color: #00455f;
+    border-radius: 15px;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+}
+
+.block-cont p{
+    margin: 30px;
+
+}
+
+.full{
+    height: 540px;
+}
