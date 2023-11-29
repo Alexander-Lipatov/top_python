@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <header class="header">
+<body id="to_up">
+    <div class="up"><a href="#header"><img src="./assets/img/up-icon.svg" alt="" fill="white" width="75"></a></div>
+    <header id="header" class="header">
         <div class="logo">
             <a href="">
                 <img src="./assets/img/logo.svg" alt="logo">
@@ -17,13 +18,14 @@
         </div>
         <nav class="navigations">
             <ul>
-                <li><a href="" class="nav-link">Главная</a></li>
-                <li><a href="" class="nav-link">Сеансы</a></li>
-                <li><a href="" class="nav-link">Отзывы</a></li>
-                <li><a href="" class="nav-link">Контакты</a></li>
-                <li><a href="" class="nav-link">Новости</a></li>
-                <li><a href="" class="nav-link">Обо мне</a></li>
-                <li><a href="" class="nav-link">Блог</a></li>
+                <li><a href="./index.html" class="nav-link">Главная</a></li>
+                <li><a href="./index.html#sessions" class="nav-link">Сеансы</a></li>
+                <li><a href="./index.html#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="./index.html#contact" class="nav-link">Контакты</a></li>
+                <li><a href="./news.html" class="nav-link">Новости</a></li>
+                <li><a href="./index.html#about" class="nav-link">Обо мне</a></li>
+                <li><a href="./blog.html" class="nav-link">Блог</a></li>
+
             </ul>
         </nav>
         <div>
@@ -40,10 +42,12 @@
                     RitmStyle</h1>
             </div>
         </div>
-        <div class="session_block">
-            <h2>Сеансы RitmStyle(flexbox)</h2>
+        <div id="sessions" class="session_block">
+            <h2>Сеансы RitmStyle</h2>
             <div class="flex-box">
-                <div class="block-cont full"><p>Стандартный RitmStyle</p></div>
+                <div class="block-cont full">
+                    <p>Стандартный RitmStyle</p>
+                </div>
                 <div class="flex-box">
                     <div class="flex-box flex-col">
                         <div class="block-cont">
@@ -65,7 +69,7 @@
             </div>
         </div>
         <!-- Вариант с гридами -->
-        <div class="sessions-block">
+        <!-- <div class="sessions-block">
             <h2>Сеансы RitmStyle(grid)</h2>
             <div class="cards">
                 <div class="item">Стандартный RitmStyle</div>
@@ -74,8 +78,8 @@
                 <div class="item">RitmStyle с полным погружением под воду</div>
                 <div class="item ">RitmStyle + красочная подводная фотосессия</div>
             </div>
-        </div>
-        <div class="reviews-block">
+        </div> -->
+        <div id="reviews" class="reviews-block">
             <h2>
                 Отзывы
             </h2>
@@ -132,7 +136,7 @@
             </div>
 
         </div>
-        <div class="about-block">
+        <div id="about" class="about-block">
             <h2>Об RitmStyle</h2>
             <div class="content-about">
                 <div class="block-row">
@@ -167,7 +171,7 @@
 
             </div>
         </div>
-        <div class="price-block">
+        <div id="price" class="price-block">
             <h2>Стоимость сеансов</h2>
             <div class="price-content">
                 <div class="price-list">
@@ -200,7 +204,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-block">
+        <div id="contact" class="contact-block">
             <div class="contact-map">
                 <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A1f2dde2c8673d07fa430a4b0d6c9598bda13fe4398318cf9e0476ce3fe6ed9af&amp;source=constructor"
@@ -238,7 +242,7 @@
 
     </footer>
 
-
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
 </body>
 

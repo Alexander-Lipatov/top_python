@@ -1,3 +1,5 @@
+/* @import ('~lucide-static/font/Lucide.css'); */
+
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +62,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
+    padding: 50px 0;
 }
 
 .navigations ul {
@@ -437,9 +439,25 @@ footer {
 
 .block-cont p{
     margin: 30px;
-
 }
 
 .full{
     height: 540px;
+}
+
+
+.up{
+    position: fixed;
+    bottom: 75px;
+    right: 50px;
+    z-index: 1000;
+    
+}
+
+
+.up img:hover{
+    cursor: pointer;
+    background-color: #02648b;
+    border-radius: 50px;
+    
 }
