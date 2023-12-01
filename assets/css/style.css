@@ -167,6 +167,7 @@ button:hover {
 .reviews-block {
     display: flex;
     flex-direction: column;
+    padding: 50px 0;
 }
 
 .content-reviews {
@@ -183,9 +184,9 @@ button:hover {
 }
 
 li .post {
-    width: 500px;
+    width: 420px;
     background-color: rgba(1, 138, 190, .3);
-    height: 276px;
+    height: 196px;
     padding: 40px 45px;
     border-radius: 10px;
     display: flex;
@@ -194,15 +195,15 @@ li .post {
 }
 
 .post p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 140%;
 }
 
 li .post-active {
-    width: 636px;
+    width: 516px;
     background-color: #018ABE;
-    height: 350px;
+    height: 240px;
     padding: 55px 60px;
     color: white;
     border-radius: 10px;
@@ -422,7 +423,8 @@ footer {
 
 .flex-box{
     display: flex;
-    gap: 24px;}
+    gap: 24px;
+}
 
 .block-cont {
     height: 258px;
