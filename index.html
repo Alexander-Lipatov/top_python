@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -36,12 +36,12 @@
 
     <main>
         <div class="slider">
-            <img src="./assets/img/slider.png" alt="">
             <div class="content">
                 <h3>Укрепление здоровья</h3>
                 <h1>Акватерапия
                     RitmStyle</h1>
             </div>
+            <img src="./assets/img/slider.png" alt="">
         </div>
         <div id="sessions" class="sessions-block">
             <h2>Сеансы RitmStyle</h2>
@@ -141,7 +141,7 @@
             <h2>Об RitmStyle</h2>
             <div class="content-about">
                 <div class="block-row">
-                    <div class="block">
+                    <div class="block ">
                         <h3>RitmStyle массаж</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
                             mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet
@@ -150,10 +150,10 @@
                             diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor
                             at tempor.</p>
                     </div>
-                    <div class="block"><img src="./assets/img/about-img.jpg" alt=""></div>
+                    <div class="block block-img"><img src="./assets/img/about-img.jpg" alt=""></div>
                 </div>
                 <div class="block-row">
-                    <div class="block"><img src="./assets/img/about-img.jpg" alt=""></div>
+                    <div class="block block-img"><img src="./assets/img/about-img.jpg" alt=""></div>
                     <div class=" block">
                         <h3>RitmStyle гидротерапия</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra
@@ -201,37 +201,50 @@
                 </div>
                 <div class="cert-block-img">
                     <img src="./assets/img/photo-cert.jpg" alt="">
-                    <span>Подарочный сертификат </span>
+                    <p>
+                        <span>
+
+                            Подарочный сертификат
+                    </p>
+                    </span>
                 </div>
             </div>
         </div>
-        <div id="contact" class="contact-block">
-            <div class="contact-map">
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A1f2dde2c8673d07fa430a4b0d6c9598bda13fe4398318cf9e0476ce3fe6ed9af&amp;source=constructor"
-                    width="856" height="604" frameborder="0">
-                </iframe>
-            </div>
-            <div class="contact-cards">
-                <div class="contact-card-info">
-                    <h4>
-                        Бассейн WorkClass
-                    </h4>
-                    <p class="addr">Невский 140</p>
-                    <p class="metro">м. Спасская</p>
-                    <p class="date-meeting">Запись по договоренности</p>
-                    <button>Записаться на сеанс</button>
+        <div id="contact" class="contact-main-block">
+            <h2>Где мы?</h2>
+            <div class="contact-block">
+                <div class="contact-map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A1f2dde2c8673d07fa430a4b0d6c9598bda13fe4398318cf9e0476ce3fe6ed9af&amp;source=constructor"
+                        width="856" height="604" frameborder="0">
+                    </iframe>
                 </div>
-                <div class="contact-card-info">
-                    <h4>
-                        Бассейн "На Гороховой"
-                    </h4>
-                    <p class="addr">3-й проезд Иванова</p>
-                    <p class="metro">м. Крестовский остров</p>
-                    <p class="date-meeting">Запись по договоренности</p>
-                    <button>Записаться на сеанс</button>
+                <div class="contact-cards">
+                    <div class="contact-card-info">
+                        <h4>
+                            Бассейн WorkClass
+                        </h4>
+                        <p class="addr">Невский 140</p>
+                        <p class="metro">м. Спасская</p>
+                        <p class="date-meeting">Запись по договоренности</p>
+                        <button>Записаться на сеанс</button>
+                        <!-- <button class="btn">Записаться на сеанс</button> -->
+
+                    </div>
+                    <div class="contact-card-info">
+                        <h4>
+                            Бассейн "На Гороховой"
+                        </h4>
+                        <p class="addr">3-й проезд Иванова</p>
+                        <p class="metro">м. Крестовский остров</p>
+                        <p class="date-meeting">Запись по договоренности</p>
+                        <button>Записаться на сеанс</button>
+                        <!-- <button class="btn">Записаться на сеанс</button> -->
+
+                    </div>
                 </div>
             </div>
+
         </div>
 
 

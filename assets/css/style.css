@@ -1,4 +1,7 @@
-/* @import ('~lucide-static/font/Lucide.css'); */
+@import url('./desktop.css');
+@import url('./mobile.css') screen and (min-width:320px) and (max-width:425px);
+@import url('./tablet.css');
+
 @font-face {
 	font-family: 'El Messiri'; 
 	src: url('../fonts/ElMessiri-Regular.woff'); 
@@ -20,7 +23,6 @@ li {
 
 body {
     background: var(--bgc, #162831);
-    width: 1297px;
     margin: auto;
 }
 
@@ -60,23 +62,20 @@ button:hover {
     cursor: pointer;
 }
 
-/* Header */
+.up {
+    position: fixed;
+    bottom: 75px;
+    right: 50px;
+    z-index: 1000;
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0;
 }
 
-.navigations ul {
 
-    display: flex;
-    gap: 50px;
-}
+.up img:hover {
+    cursor: pointer;
+    background-color: #02648b;
+    border-radius: 50px;
 
-.navigations a:hover {
-    border-bottom: 1px solid white;
 }
 
 .btn {
@@ -99,282 +98,11 @@ button:hover {
     position: absolute;
     left: 13px;
     top: 13px;
-
-}
-
-/* Slider block */
-
-.slider {
-    height: 100%;
-    display: block;
-    margin: 20px 0 50px;
-    height: 600px;
-}
-
-.slider img {
-    position: absolute;
-    margin: auto;
-}
-
-.content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    height: 100%;
-}
-
-.content h1 {
-    font-size: 64px;
-    width: 600px;
-    text-align: center;
-}
-
-.content h3 {
-    font-size: 24px;
-}
-
-/* Sessions block */
-
-.sessions-block {
-    margin: 50px auto;
-}
-
-.cards {
-    padding: 50px 0;
-    display: grid;
-    grid-template-columns: 416px 416px 416px;
-    grid-template-rows: repeat(2, 258px);
-    gap: 24px;
-}
-
-.item {
-    border-radius: 20px;
-    background: url('../img/bg-card.png') no-repeat;
-    background-size: contain;
-    background-color: #00455f;
-    background-position: 50%;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    padding-bottom: 30px;
-    border-radius: 10px;
-    position: relative;
-    border-bottom: 7px solid transparent;
-}
-
-.item:first-child {
-    grid-area: 1 / 1 / 3 / 2;
-    padding-bottom: 60px;
-}
-
-.item:hover {
-    border-bottom: 7px solid #018ABE;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-
-/* Reviews block */
-
-.reviews-block {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-}
-
-.content-reviews {
-    position: relative;
-    left: 0;
-    width: 100%;
-}
-
-.content-reviews ul {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-}
-
-li .post {
-    width: 420px;
-    background-color: rgba(1, 138, 190, .3);
-    height: 196px;
-    padding: 40px 45px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.post p {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 140%;
-}
-
-li .post-active {
-    width: 516px;
-    background-color: #018ABE;
-    height: 240px;
-    padding: 55px 60px;
-    color: white;
-    border-radius: 10px;
-    font-size: 14px;
-}
-
-li .post-active p {
-    margin: 20px 0;
-}
-
-.post>p {
-    color: rgba(255, 255, 255, 0.3);
-    margin: 15px 0;
-}
-
-.post>h3 {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.post-active h3 {
-    color: white;
-    font-size: 22px;
-}
-
-.post-active>p {
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.controls {
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-    gap: 16px
-}
-
-.controls li {
-    width: 16px;
-    height: 16px;
-    background-color: #737e83;
-    border-radius: 5px;
-}
-
-.controls li:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    background: #fff;
-}
-
-.controls li.active {
-    background: white;
-}
-
-/* About block */
-
-.about-block {
-    margin: 100px 0;
-}
-
-.block-row {
-    display: flex;
-    margin: 100px 100px 0 100px;
-    gap: 84px;
-
-}
-
-.block {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.block h3 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-}
-
-.block p {
-    margin: 30px 0;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 140%;
-}
-
-/* Price block */
-
-.price-block {
-    padding: 0px 100px;
-    display: flex;
-    flex-direction: column;
-}
-
-.price-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-}
-
-.price-list {
-    display: flex;
-    align-items: center;
-    justify-self: stretch;
-}
-
-.price-list ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 31px;
-    width: 415px;
-}
-
-.price-list>ul>li {
-    display: flex;
-    justify-content: space-between;
-}
-
-.price-list>ul>li div:first-child:before {
-    content: url('../img/img-1.svg');
-    margin-right: 20px;
-}
-
-.cert-block-img {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-}
-
-.cert-block-img img {
-    border-radius: 12px;
-}
-
-/* Contact block */
-.contact-block {
-    display: flex;
-    gap: 48px;
-    margin: 100px 0 60px;
-}
-
-.contact-map {
-    width: 856px;
-}
-
-.contact-map iframe {
-    border-radius: 10px;
 }
 
 .contact-cards {
     display: flex;
     flex-direction: column;
-    width: 392px;
     gap: 24px;
 }
 
@@ -416,193 +144,4 @@ li .post-active p {
     padding: 9px 15px;
     border-radius: 3px;
     border: none;
-}
-
-
-/* Footer */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0px;
-}
-
-
-
-/* Session block on flex */
-
-
-.flex-col {
-    flex-direction: column;
-}
-
-.flex-box {
-    display: flex;
-    gap: 24px;
-}
-
-.block-cont {
-    height: 258px;
-    width: 416px;
-    background: url('../img/bg-card.png') no-repeat;
-    background-size: contain;
-    background-position: 50%;
-    background-color: #00455f;
-    border-radius: 15px;
-    align-items: end;
-    display: flex;
-    justify-content: center;
-}
-
-.block-cont p {
-    margin: 30px;
-}
-
-.full {
-    height: 540px;
-}
-
-
-.up {
-    position: fixed;
-    bottom: 75px;
-    right: 50px;
-    z-index: 1000;
-
-}
-
-
-.up img:hover {
-    cursor: pointer;
-    background-color: #02648b;
-    border-radius: 50px;
-
-}
-
-
-/*________ News Page________*/
-
-.news-container {
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
-    padding-bottom: 150px;
-
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.news-item {
-    width: 416px;
-    height: 258px;
-    background-color: #00455f;
-    display: flex;
-    border-radius: 10px;
-}
-
-.news-item:hover {
-    cursor: pointer;
-    box-shadow: 5px 2px 10px #018ABE;
-}
-
-.news-image {
-    position: absolute;
-
-}
-
-.news-image>img {
-    height: 258px;
-    margin: auto;
-}
-
-.news-block {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 35px 45px 30px 35px;
-}
-
-.news-date span {
-    background-color: #018ABE;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-weight: 700;
-
-}
-
-.news-title p {
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-
-}
-
-
-
-/*________ Blog_list Page________*/
-
-.blog-container {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    padding-bottom: 120px;
-}
-
-.blog-list {
-    display: flex;
-    flex-direction: column;
-    gap:45px
-}
-
-.blog-item {
-    border: 1px solid #018ABE;
-    border-radius: 20px;
-    padding: 50px 60px;
-    display: flex;
-    gap: 50px;
-    /* max-height: 430px; */
-}
-
-.blog-image {}
-
-.blog-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.blog-date{
-    margin-bottom: 10px;
-}
-
-.blog-date span{
-    background-color: #018ABE;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-weight: 500;
-}
-
-.blog-title>p{
-    margin: 20px 0;
-    font-size: 24px;
-}
-
-.blog-short-content {
-}
-
-.read-blog-btn {
-    margin: 40px 0px;
-}
-.read-blog-btn button{
-    padding: 10px 20px;
-    border: none;
-    background-color: #018ABE;
-    border-radius: 5px;
-}
-
-.read-blog-btn button:hover{
-    background-color: #02648b;
-    box-shadow: inset -1px -1px 1px #162831;
 }
