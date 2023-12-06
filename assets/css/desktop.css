@@ -1,5 +1,5 @@
 /* Global style */
-@media (min-width:1024px) {
+@media (min-width:600px) {
 
     body {
         width: 1297px;
@@ -313,6 +313,11 @@
 
     .contact-cards {
         width: 392px;
+
+    }
+
+    .contact-card-info {
+        height: 220px;
 
     }
 

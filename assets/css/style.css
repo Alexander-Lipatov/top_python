@@ -1,6 +1,5 @@
 @import url('./desktop.css');
-@import url('./mobile.css') screen and (min-width:320px) and (max-width:425px);
-@import url('./tablet.css');
+@import url('./mobile.css') screen and  (max-width:600px);
 
 @font-face {
 	font-family: 'El Messiri'; 
@@ -109,7 +108,6 @@ button:hover {
 .contact-card-info {
     border-radius: 10px;
     padding: 35px 45px;
-    height: 220px;
     background-color: #018ABE;
 }
 

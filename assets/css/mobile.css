@@ -41,6 +41,10 @@ main {}
     width: 100%;
 }
 
+.content>h1 {
+    text-align: center;
+}
+
 .slider>img {
     width: 100%;
 }
@@ -90,7 +94,7 @@ main {}
 .post-active {
     display: block;
     background-color: #018ABE;
-    height: 196px;
+    min-height: 196px;
     padding: 20px 45px;
     border-radius: 10px;
     display: flex;
