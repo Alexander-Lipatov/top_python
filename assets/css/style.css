@@ -1,5 +1,5 @@
 @import url('./desktop.css');
-@import url('./mobile.css') screen and  (max-width:600px);
+@import url('./mobile.css') screen and  (max-width:1296px);
 
 @font-face {
 	font-family: 'El Messiri'; 
